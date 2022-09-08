@@ -20,13 +20,15 @@
 	lol3 = lol ---max-count=3
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-	rv = remote -v
-	s = status -s
-	st = status -sb
+	mem = !"git merge $(git default-branch)"
 	reab = rebase --abort
+	rebm = !"git rebase $(git default-branch)"
 	reco = rebase --continue
 	rein = rebase -i
+	rv = remote -v
 	sw = switch
+	s = status -s
+	st = status -sb
 	swc = switch -c
 	undo = reset --soft HEAD^
 	up = !"git switch $(git default-branch) && git fetch --all --prune --progress && git pull"
