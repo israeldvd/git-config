@@ -17,7 +17,7 @@
 	default-branch = !"git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'"
 	last = log -1 HEAD --stat
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
-	lol3 = lol -3
+	lol3 = lol ---max-count=3
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	rv = remote -v
