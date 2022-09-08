@@ -1,25 +1,30 @@
-core.editor=Code --wait
-user.name=Israel David
-alias.lola=log --graph --decorate --pretty=oneline --abbrev-commit --all
-alias.lol=log --graph --decorate --pretty=oneline --abbrev-commit
-alias.s=status -s
-alias.st=status -sb
-alias.last=log -1 HEAD --stat
-alias.cm=commit -m
-alias.rv=remote -v
-alias.d=diff
-alias.gl=config --global -l
-alias.undo=reset --soft HEAD^
-alias.ga=add
-alias.gap=add -p
-alias.lg=log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-alias.co=checkout
-alias.ahead-commits=!git lola HEAD~1..${current_branch}
-alias.dw=diff --color-words
-alias.wd=dw
-alias.lol3=lol -3
-alias.cam=commit --amend
-alias.sw=switch
-alias.swc=switch -c
-help.autocorrect=50
-rebase.autostash=true
+[core]
+	editor = Code --wait
+[user]
+	name = Israel Davi
+[alias]
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	s = status -s
+	st = status -sb
+	last = log -1 HEAD --stat
+	cm = commit -m
+	rv = remote -v
+	d = diff
+	gl = config --global -l
+	undo = reset --soft HEAD^
+	ga = add
+	gap = add -p
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	co = checkout
+	ahead-commits = !git lola HEAD~1..${current_branch}
+	dw = diff --color-words
+	wd = dw
+	lol3 = lol -3
+	cam = commit --amend
+	sw = switch
+	swc = switch -c
+[help]
+	autocorrect = 50
+[rebase]
+	autoStash = true
