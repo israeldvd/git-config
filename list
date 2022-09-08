@@ -19,5 +19,7 @@ alias.dw=diff --color-words
 alias.wd=dw
 alias.lol3=lol -3
 alias.cam=commit --amend
+alias.sw=switch
+alias.swc=switch -c
 help.autocorrect=50
 rebase.autostash=true
