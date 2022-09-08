@@ -29,14 +29,14 @@
 	reco = rebase --continue
 	rein = rebase -i
 	rv = remote -v
-	sw = switch
 	s = status -s
 	st = status -sb
+	sw = switch
 	swc = switch -c
 	undo = reset --soft HEAD^
 	up = !"git switch $(git default-branch) && git fetch --all --prune --progress && git pull"
 	wd = dw
 [help]
-	autocorrect = 50
+	autocorrect = 40
 [rebase]
 	autoStash = true
