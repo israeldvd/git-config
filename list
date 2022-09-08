@@ -1,29 +1,29 @@
 [core]
 	editor = Code --wait
 [user]
-	name = Israel Davi
+	name = Israel David
 [alias]
-	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-	lol = log --graph --decorate --pretty=oneline --abbrev-commit
-	s = status -s
-	st = status -sb
-	last = log -1 HEAD --stat
+	ahead-commits = !git lola HEAD~1..${current_branch}
+	cam = commit --amend
 	cm = commit -m
-	rv = remote -v
+	co = checkout
 	d = diff
-	gl = config --global -l
-	undo = reset --soft HEAD^
+	dw = diff --color-words
 	ga = add
 	gap = add -p
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-	co = checkout
-	ahead-commits = !git lola HEAD~1..${current_branch}
-	dw = diff --color-words
-	wd = dw
+	gl = config --global -l
+	last = log -1 HEAD --stat
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lol3 = lol -3
-	cam = commit --amend
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	rv = remote -v
+	s = status -s
+	st = status -sb
 	sw = switch
 	swc = switch -c
+	undo = reset --soft HEAD^
+	wd = dw
 [help]
 	autocorrect = 50
 [rebase]
