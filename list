@@ -3,7 +3,7 @@
 [user]
 	name = Israel David
 [alias]
-	ahead-commits = !git lola HEAD~1..${current_branch}
+	ahead-commits = lol HEAD~1..main
 	cam = commit --amend
 	cm = commit -m
 	co = checkout
