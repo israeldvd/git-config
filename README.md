@@ -4,4 +4,4 @@ This repository has the purpose of showing current git **global configuration** 
 
 - Use `git config --global --edit`.
 
-The file name, `list`, if copied, is set to be different than `.gitconfig` (config file) to avoid confusion with it thereafter.
+The file name, `list`, is set to be different than `.gitconfig` (config file) to avoid confusion with it thereafter, specially after copying it. Its name is arbitrary, though.
