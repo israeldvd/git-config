@@ -3,16 +3,18 @@
 [user]
 	name = Israel David
 [alias]
-	ahead-commits = lol HEAD~1..main
+	ahead-commits = !git lol HEAD~1..$(git default-branch)
 	cam = commit --amend
 	cm = commit -m
 	co = checkout
+	swm = !"git switch $(git default-branch)"
 	cv = commit -v
 	d = diff
 	dw = diff --color-words
 	ga = add
 	gap = add -p
 	gl = config --global -l
+	default-branch = !"git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'"
 	last = log -1 HEAD --stat
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lol3 = lol -3
@@ -25,6 +27,7 @@
 	sw = switch
 	swc = switch -c
 	undo = reset --soft HEAD^
+	up = !"git switch $(git default-branch) && git fetch --all --prune --progress && git pull"
 	wd = dw
 [help]
 	autocorrect = 50
