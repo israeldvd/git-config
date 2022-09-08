@@ -7,6 +7,7 @@
 	cam = commit --amend
 	cm = commit -m
 	co = checkout
+	cv = commit -v
 	d = diff
 	dw = diff --color-words
 	ga = add
@@ -20,6 +21,7 @@
 	rv = remote -v
 	s = status -s
 	st = status -sb
+	reco = rebase --continue
 	sw = switch
 	swc = switch -c
 	undo = reset --soft HEAD^
