@@ -23,7 +23,9 @@
 	rv = remote -v
 	s = status -s
 	st = status -sb
+	reab = rebase --abort
 	reco = rebase --continue
+	rein = rebase -i
 	sw = switch
 	swc = switch -c
 	undo = reset --soft HEAD^
