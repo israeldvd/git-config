@@ -17,8 +17,11 @@
 	default-branch = !"git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'"
 	last = log -1 HEAD --stat
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
-	lol3 = lol ---max-count=3
+	lol3 = lol --max-count=3
+	lol10 = lol --max-count=10
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	lola3 = lola --max-count=3
+	lola10 = lola --max-count=10
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	mem = !"git merge $(git default-branch)"
 	reab = rebase --abort
