@@ -1,7 +1,13 @@
 [core]
-	editor = Code --wait
+	editor = code --wait
+[commit]
+	gpgSign = true
 [user]
 	name = Israel David
+ 	email = 
+	signingKey = 
+[credential]
+	username = israeldvd
 [alias]
 	ahead-commits = !git lol HEAD~1..$(git default-branch)
 	cam = commit --amend
