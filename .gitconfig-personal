@@ -8,6 +8,7 @@
 	signingKey = 
 [credential]
 	username = israeldvd
+	helper = cache --timeout=3600
 [alias]
 	ahead-commits = !git lol HEAD~1..$(git default-branch)
 	cam = commit --amend
